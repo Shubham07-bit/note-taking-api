@@ -32,6 +32,17 @@ class NoteRetrieveUpdateDestroy(generics.RetrieveUpdateDestroyAPIView):
         return super().get(request, *args, **kwargs)
 
 class NoteList(APIView):
+    @swagger_auto_schema(
+        manual_parameters=[
+            openapi.Parameter(
+                'title',
+                openapi.IN_QUERY,
+                description="Filter notes by title (case insensitive)",
+                type=openapi.TYPE_STRING
+            ),
+        ],
+        responses={200: NoteSerializer(many=True)}
+    )
     def get(self, request, format=None):
         # Get the title from the query parameters(if none, default to empty string)
         title = request.query_params.get("title", "")
