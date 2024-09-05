@@ -52,7 +52,7 @@ Ensure you have the following installed:
    pip install -r requirements.txt
    ```
 
-4. **Set up PostgreSQL database**:
+4. **Set up PostgreSQL database**(or you can just comment out these lines in settings.py file):
 
    Ensure PostgreSQL is installed and running. Create a database named `notes` and configure the user and password in the `DATABASES` section of the `settings.py` file:
 
