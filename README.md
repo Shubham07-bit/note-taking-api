@@ -43,7 +43,7 @@ Ensure you have the following installed:
 2. **Set up a virtual environment**:
    ```bash
    python -m venv env
-   source env/bin/activate   # On Windows use `env\Scripts\activate`
+   env\Scripts\activate   # On Linux use `source env/bin/activate`
    ```
 
 3. **Install the required dependencies**:
