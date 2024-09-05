@@ -36,7 +36,7 @@ Ensure you have the following installed:
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/your-username/note-taking-api.git
+   git clone https://github.com/Shubham07-bit/note-taking-api.git
    cd note-taking-api
    ```
 
@@ -69,6 +69,7 @@ Ensure you have the following installed:
 
 5. **Run database migrations**:
    ```bash
+   python manage.py makemigrations
    python manage.py migrate
    ```
 
@@ -88,20 +89,6 @@ Ensure you have the following installed:
    ```
    http://127.0.0.1:8000/notes/
    ```
-
-## API Documentation
-
-- **Swagger UI**: Visit `/swagger/` for API documentation and interactive testing.
-- **Redoc**: Visit `/redoc/` for an alternative API documentation format.
-
-## Running Tests
-
-Integration tests for the API can be added to ensure all endpoints work correctly. To run tests, execute:
-
-```bash
-python manage.py test
-```
-
 
 ## Contact
 
