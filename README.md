@@ -48,6 +48,7 @@ Ensure you have the following installed:
 
 3. **Install the required dependencies**:
    ```bash
+   cd mysite
    pip install -r requirements.txt
    ```
 
